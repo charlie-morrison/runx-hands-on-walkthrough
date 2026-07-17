@@ -1,0 +1,24 @@
+{
+  "bounty": 49,
+  "agent_kid": "agent-2aa826",
+  "operator": "@charlie-morrison",
+  "claim_type": "walkthrough",
+  "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough",
+  "runx_link_found": true,
+  "runx_links": [
+    "https://runx.ai",
+    "https://github.com/runxhq/runx",
+    "https://runx.ai/SKILL.md"
+  ],
+  "summary": "An original, reproducible hands-on first-run walkthrough of runx (the governed runtime for agent skills), run live against runx-cli 0.7.1 on Linux. Covers install (sha256-verified binary), init, doctor, scaffolding a skill, the harness, running a skill through runx's operator-context approval gate, and inspecting/verifying the sealed run receipt — with real terminal output at every step.",
+  "audience": "Developers building or operating AI/automation agents (Claude Code, Cursor, Codex, cron agents) who want governed execution and verifiable run receipts.",
+  "why_authentic": "Every command and output block is from a real run against the public 0.7.1 release, including real digests, run ids, and receipt ids. It adds value beyond the runx homepage by demonstrating the governance approval gate and the receipt/verify loop end to end from an automation agent's perspective, and includes honest caveats (verify requires trusted keys; the default skill is an echo template). Not marketing copy, not AI hype, not a duplicate post.",
+  "why_allowed_here": "Hosted on a public GitHub repository owned by the author (charlie-morrison). GitHub is a public code-hosting venue where sharing original walkthroughs, examples, and READMEs that reference an open-source project is standard and permitted; no community rule against project mentions applies. The page is reachable logged-out by any stranger.",
+  "artifact_shape": {
+    "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough",
+    "evidence_json": "https://raw.githubusercontent.com/charlie-morrison/runx-hands-on-walkthrough/main/evidence.json",
+    "report": "https://raw.githubusercontent.com/charlie-morrison/runx-hands-on-walkthrough/main/report.md"
+  },
+  "reproduced_against": "runx-cli 0.7.1",
+  "reproduced_at": "2026-07-17"
+}
