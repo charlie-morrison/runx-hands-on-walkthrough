@@ -12,8 +12,50 @@
   ],
   "summary": "An original, reproducible hands-on first-run walkthrough of runx (the governed runtime for agent skills), run live against runx-cli 0.7.1 on Linux. Covers install (sha256-verified binary), init, doctor, scaffolding a skill, the harness, running a skill through runx's operator-context approval gate, and inspecting/verifying the sealed run receipt — with real terminal output at every step.",
   "audience": "Developers building or operating AI/automation agents (Claude Code, Cursor, Codex, cron agents) who want governed execution and verifiable run receipts.",
-  "why_authentic": "Every command and output block is from a real run against the public 0.7.1 release, including real digests, run ids, and receipt ids. It adds value beyond the runx homepage by demonstrating the governance approval gate and the receipt/verify loop end to end from an automation agent's perspective, and includes honest caveats (verify requires trusted keys; the default skill is an echo template). Not marketing copy, not AI hype, not a duplicate post.",
-  "why_allowed_here": "Hosted on a public GitHub repository owned by the author (charlie-morrison). GitHub is a public code-hosting venue where sharing original walkthroughs, examples, and READMEs that reference an open-source project is standard and permitted; no community rule against project mentions applies. The page is reachable logged-out by any stranger.",
+  "why_authentic": "Every command and output block is from a real run against the public 0.7.1 release, including real digests, run ids, and receipt ids. It adds value beyond the runx homepage by demonstrating the governance approval gate and the receipt/verify loop end to end, with honest caveats. Not marketing copy, not AI hype, not a duplicate post.",
+  "why_allowed_here": "Hosted on a public GitHub repository owned by the author (charlie-morrison). GitHub is a public code-hosting venue where sharing original walkthroughs and READMEs that reference an open-source project is standard and permitted; the page is reachable logged-out by any stranger.",
+  "observations": [
+    {
+      "claim_type": "walkthrough",
+      "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough",
+      "runx_link_found": true,
+      "summary": "The published artifact is an original hands-on walkthrough README that reproduces a runx first-run end to end (install through sealed receipt) against runx-cli 0.7.1, with real terminal output at every step.",
+      "audience": "Developers evaluating governed-execution tooling for AI/automation agents.",
+      "why_allowed": "Public GitHub repository owned by the author; GitHub permits original project walkthroughs and README examples that reference an open-source project, and the page is reachable logged-out."
+    },
+    {
+      "claim_type": "runx_link_disclosure",
+      "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough#why-this-matters",
+      "runx_link_found": true,
+      "summary": "The post links the project directly: https://runx.ai, https://github.com/runxhq/runx, and the agent-readable spec https://runx.ai/SKILL.md, so a reader can find and adopt runx from the walkthrough.",
+      "audience": "Readers who want to try runx after reading the walkthrough.",
+      "why_allowed": "Linking an open-source project's own homepage, source repo, and spec is standard, non-promotional reference on GitHub."
+    },
+    {
+      "claim_type": "governance_demonstration",
+      "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough#5-run-the-skill--and-meet-the-governance-gate",
+      "runx_link_found": true,
+      "summary": "Section 5 documents runx's operator-context approval gate: the run halts and prints a context digest that must be explicitly approved with --approve-operator-context before it will execute — captured with real digest sha256:6a20c537... and run_id run_default_0b46228e9b9e.",
+      "audience": "Operators of unattended/cron agents who care about scoped authority.",
+      "why_allowed": "Original technical documentation of observed real behaviour; no venue rule restricts it."
+    },
+    {
+      "claim_type": "receipt_verification",
+      "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough#6-the-receipt-history-verify-inspect",
+      "runx_link_found": true,
+      "summary": "Section 6 shows the receipt loop: runx history, runx verify (tree ok), and the content-addressed receipt JSON (receipt_id sha256:982584a6..., artifact_types ['approved operator context']) — runx's core auditability value prop, shown working.",
+      "audience": "Engineers who need auditable, replayable records of what an agent ran.",
+      "why_allowed": "Original reproduction of a real run's receipt output; standard technical sharing."
+    },
+    {
+      "claim_type": "honest_caveats",
+      "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough#honest-notes-the-bar-here-is-honesty-not-hype",
+      "runx_link_found": true,
+      "summary": "The walkthrough includes honest limitations rather than pure praise: runx verify requires trusted keys (RUNX_RECEIPT_VERIFY_KID + ed25519 public key) or --allow-local-development-signatures for local receipts, and the scaffolded default skill is an echo template until you add real work.",
+      "audience": "Developers deciding whether runx fits, who want an honest assessment.",
+      "why_allowed": "Honest criticism/assessment of an open-source tool is explicitly allowed and encouraged by the bounty."
+    }
+  ],
   "artifact_shape": {
     "public_url": "https://github.com/charlie-morrison/runx-hands-on-walkthrough",
     "evidence_json": "https://raw.githubusercontent.com/charlie-morrison/runx-hands-on-walkthrough/main/evidence.json",
